@@ -681,6 +681,6 @@ if __name__ == '__main__':
     bot_thread = threading.Thread(target=lambda: asyncio.run(StarTinG()), daemon=True)
     bot_thread.start()
 
-    #port = int(os.environ.get("PORT", 21505))
-    #app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 21505))
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
 
